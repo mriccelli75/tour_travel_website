@@ -13,12 +13,10 @@ header {
   width: 80%;
   height: 95vh;
   margin: auto;
-  border: 1px solid black;
 }
 header nav {
   width: 95%;
   height: 7%;
-  border: 1px solid black;
   margin: auto;
   display: flex;
   align-items: center;
@@ -81,7 +79,7 @@ header .content {
   position: relative;
   width: 100%;
   height: 93%;
-  border: 1px solid black;
+  
 }
 
 header .content:before {
@@ -199,7 +197,7 @@ header .trip_bx .travel_bx {
   width: 100%;
   height: auto;
   margin: auto;
-  top: 40px;
+  top: 30px;
   /* background: #000; */
   /* border: 1px solid #000; */
   border-radius: 5px;
@@ -228,7 +226,7 @@ header .trip_bx .travel_bx .cards {
   width: 96%;
   height: auto;
   margin: 0 auto;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -236,9 +234,9 @@ header .trip_bx .travel_bx .cards {
 }
 
 header .trip_bx .travel_bx .cards .card {
-  width: 220px;
+  min-width: 220px;
   height: 180px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 
 }
 header .trip_bx .travel_bx .cards .card h3 {
@@ -252,4 +250,40 @@ header .trip_bx .travel_bx .cards .card h3 img {
   width: 20px;
   height: 20px;
   margin-left: 5px;
+}
+header .trip_bx .travel_bx .cards .card img {
+  width: 100%;
+  height: 50%;
+}
+
+header .trip_bx .travel_bx .cards .card .btn_city {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid #000; */
+}
+
+header .trip_bx .travel_bx .cards .card .btn_city a {
+  text-decoration: none;
+  background: #000;
+  color: white;
+  border-radius: 20px;
+  padding: 6px 20px;
+  font-size: 11px;
+  transition: .3s linear;
+}
+
+header .trip_bx .travel_bx .cards .card .btn_city a:hover {
+  background: grey;
+}
+header .trip_bx .travel_bx .cards .card .btn_city h5 {
+  font-size: 11px;
+  font-weight: 500;
+  margin: 0;
+  margin-top: 5px;
+  line-height: 1.5;
+}
+header .trip_bx .travel_bx .cards .card .btn_city h5 span {
+  font-size: 13px;
+  font-weight: 700;
 }
