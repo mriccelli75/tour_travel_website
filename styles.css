@@ -291,7 +291,7 @@ header .trip_bx .travel_bx .cards .card .btn_city h5 span {
 .offers {
   width: 60%;
   height: auto;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   margin: auto;
   margin-top: 45px;
 }
@@ -310,12 +310,13 @@ header .trip_bx .travel_bx .cards .card .btn_city h5 span {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .offers .cards .card {
   position: relative;
   width: 200px;
   height: 350px;
-  border: 1px solid #000;
+  
 }
 .offers .cards .card h3 {
   width: 140px;
@@ -333,17 +334,20 @@ header .trip_bx .travel_bx .cards .card .btn_city h5 span {
 .offers .cards .card .img_text img {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 300px;
   margin-top: 5px;
   border-radius: 6px 6px 0px 0px;
 }
 .offers .cards .card .img_text h4 {
   position: absolute;
   font-size: 9px;
-  /* padding: 0px 15px; */
-  bottom: 25px;
+  padding: 20px 15px;
+  bottom: 0;
   margin: 0;
   color: #fff;
+  z-index: 2;
+  display: flex;
+  align-items: center;
 }
 .offers .cards .card .img_text h4:before {
   content: '';
@@ -352,4 +356,83 @@ header .trip_bx .travel_bx .cards .card .btn_city h5 span {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
+  z-index: -1;
+  left: 0;
+}
+
+.offers .cards .card .cont_bx {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #d9d7d7;
+  padding: 5px 0px;
+  border: 0px 0px 5px 5px;
+}
+
+.offers .cards .card .cont_bx .price,
+.offers .cards .card .cont_bx .days {
+  margin: 0px 8px;
+}
+.offers .cards .card .cont_bx .price .heart_chat {
+  display: flex;
+  align-items: center;
+}
+.offers .cards .card .cont_bx .price .heart_chat i:nth-child(1) {
+  color: red;
+  font-size: 12px;
+  font-style: normal;
+}
+.offers .cards .card .cont_bx .price .heart_chat i:nth-child(1) span {
+  color: #000;
+  font-size: 13px;
+  margin-right: 5px;
+}
+.offers .cards .card .cont_bx .price .heart_chat i:nth-child(2) {
+  color: #3dacec;
+  font-size: 12px;
+  margin-left: 3px;
+  font-style: normal;
+}
+.offers .cards .card .cont_bx .price .heart_chat i:nth-child(2) span {
+  color: #000;
+  font-size: 13px;
+  margin-right: 10px;
+}
+.offers .cards .card .cont_bx .days { 
+  width: 50px;
+  height: 50px;
+  background: black;
+  border-radius: 50%;
+  color: white;
+  font-size: 8px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: .3s linear;
+}
+.offers .cards .card .cont_bx .days:hover {
+  transform: rotate(360deg);
+}
+
+.offers .cards .card .cont_bx .price .info_price {
+  display: flex;
+  align-items: center;
+  margin-top: 3px;
+}
+.offers .cards .card .cont_bx .price .info_price a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 11px;
+  margin-right: 13px;
+  transition: .3s linear;
+}
+.offers .cards .card .cont_bx .price .info_price a:hover {
+  color: grey;
+}
+
+.offers .cards .card .cont_bx .price .info_price h4 {
+  margin: 0;
+  font-size: 13px;
 }
