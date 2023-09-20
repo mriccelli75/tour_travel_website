@@ -1,0 +1,147 @@
+@media screen and (max-width:1485px){
+  .offers {
+    width: 65%;
+  }
+}
+@media screen and (max-width:1373px){
+  .offers {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width:1250px){
+  header {
+    width: 90%;
+  }
+  .offers {
+    width: 82%;
+  }
+  .destination {
+    width: 55%;
+  }
+}
+@media screen and (max-width:1100px) {
+  header {
+    width: 95%;
+  }
+  header .trip_bx .search_bx {
+    width: 70%;
+  }
+  header .trip_bx .travel_bx .cards {
+    overflow: auto;
+    
+  }
+  header .trip_bx .travel_bx .cards .card {
+    margin-inline: .5rem;
+  }
+  .offers {
+    width: 95%;
+  }
+  .destination {
+    width: 55%;
+  }
+
+}
+@media screen and (max-width:860px) {
+  header .trip_bx .search_bx {
+    width: 80%;
+  }
+  .destination {
+    width: 80%;
+  }
+}
+@media screen and (max-width:844px) {
+
+  .offers .cards {
+    gap: 4.5rem;
+  }
+}
+@media screen and (max-width:814px) {
+  header nav ul {
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 30%;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px grey;
+    z-index: 99999999999999;
+    padding-block: 1rem;
+    transition: 1s linear;
+    
+  }
+  /* Javascript Class */
+  header nav .ul_active {
+    top: -100%;
+  }
+  header nav ul li {
+    padding: 11px 15px;
+  }
+  .bi.bi-three-dots {
+    display: unset;
+  }
+}
+@media screen and (max-width:744px) {
+  header .trip_bx .search_bx {
+    width: 100%;
+  }
+  
+}
+@media screen and (max-width:726px) {
+  .destination {
+    width: 90%;
+  }
+}
+@media screen and (max-width:580px) {
+.destination {
+  flex-direction: column-reverse;
+  gap: 1.5rem;
+  margin-top: 7.5rem
+}
+.destination .dest_bx, .img_bx {
+  position: relative;
+  width: 92%;
+  height: auto;
+}
+header .trip_bx .search_bx .card {
+  width: 116px;
+  height: 100%;
+  margin-inline: .2rem;
+}
+header .trip_bx .search_bx .card h4 {
+  font-size: 12px;
+}
+header .trip_bx .search_bx .card input {
+  font-size: .5rem;
+}
+header .trip_bx .search_bx input[type="button"] {
+    position: absolute;
+    bottom: -47px;
+    right: 14px;
+    font-size: .5rem;
+}
+.offers {
+  width: 97%;
+}
+}
+@media screen and (max-width:510px) {
+  header .content .cont_bx {
+    width: 100%;
+  }
+  header .content .cont_bx h1 {
+    font-size: 25px;
+  }
+  header .content .cont_bx p {
+    width: 300px;
+  }
+  .offers .cards {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+}
